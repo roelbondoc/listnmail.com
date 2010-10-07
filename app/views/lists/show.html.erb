@@ -1,0 +1,8 @@
+<div class="section">
+  <h2>Your new distribution list is now ready!</h2>
+  <p style="text-align:center;">You can start sending email to your distribution list using</p>
+  <h2><%=mail_to "#{@list.name}@listnmail.com"%></h2>
+  <br/><br/>
+  <p><%=link_to "Or, start adding more recipients", new_list_recipient_path(@list)%></p>
+  <div class="fix" ></div>
+</div>

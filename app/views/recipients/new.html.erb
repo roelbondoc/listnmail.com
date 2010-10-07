@@ -1,0 +1,20 @@
+<div class="section">
+  <h2><%= mail_to "#{@list.name}@listnmail.com" %></h2>
+  <div id="submitform">
+    <% form_for @recipient, :url => list_recipients_path(@list) do |f| %>
+      <%= f.error_messages %>
+      <%=f.label :email, "Email Address"%>
+      <%=f.text_field :email%>
+      <%=f.submit "Add Recipient"%>
+    <% end %>
+  </div>
+  <div id="contact-info">
+    <ul>
+      <li><h3>Current Recipients</h3></li>
+      <% @list.recipients.each do |recipient| %>
+        <li><%=recipient.email%> - <%= link_to 'Delete', list_recipient_path(@list,recipient), :method => :delete, :confirm => "Are you sure?" %></li>
+      <% end %>
+    </ul>
+  </div>
+  <div class="fix" ></div>
+</div>

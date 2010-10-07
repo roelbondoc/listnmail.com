@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=content-width; initial-scale=0.6; maximum-scale=0.6;"/>
+    <title>List n' Mail</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css" type="text/css" media="all"/>
+  </head>
+  <body>
+    <h1><a href="/">List n' Mail</a></h1>
+    <h2>- Distribution Lists Made Easy</h2>
+    <div id="content">
+      <%=yield%>
+    </div>
+    <div id="footer"><%= link_to "Unsubscribe", new_suppression_path %></div>
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+      var pageTracker = _gat._getTracker("UA-15404977-1");
+      pageTracker._setDomainName(".listnmail.com");
+      pageTracker._trackPageview();
+    } catch(err) {}</script>
+  </body>
+</html>

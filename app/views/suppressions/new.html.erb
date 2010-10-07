@@ -1,0 +1,14 @@
+<div class="section">
+  <div id="submitform">
+    <% form_for @suppression do |f| %>
+      <%= f.error_messages %>
+      <%= f.label :email, "Email" %>
+      <%= f.text_field :email %>
+      <%= f.submit "Stop Emails" %>
+    <% end %>
+  </div>
+  <div id="contact-info">
+    <p>If you wish to never receive emails from any distribution lists sent form List n' Mail, please enter your email address.</p>
+  </div>
+  <div class="fix" ></div>
+</div>

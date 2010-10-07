@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>List n' Mail</title>
+<link rel="stylesheet" type="text/css" href="/style/style.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="/style/jquery.lightbox-0.5.css" media="screen" />
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery.lightbox-0.5.js"></script>
+<script type="text/javascript" src="/js/jquery.form.js"></script>
+<script type="text/javascript" src="/js/custom.js"></script>
+<!--[if lte IE 6]>
+<script type="text/javascript" src="js/iepngfix_tilebg.js"></script>
+
+<style type="text/css">
+
+ #logo img, div#main-content, #footer, 
+ #footer img, .nextbutton img, .prevbutton img, 
+ #socials img, #twitter img, .left-marker, #header, .divider a, .quote, .arrowlist li, 
+ .download-box, .note-box, .warning-box, .info-box, 
+ .toggle-icon img { behavior: url(/style/iepngfix.htc) }  
+ 
+ .highlight {
+	background:#585858 url(/style/dark/s_line.gif) bottom repeat-x;
+
+	
+}</style> 
+<![endif]-->
+</head>
+<body>
+<!-- START wrapper -->
+<div id="wrapper">
+  <!-- START header -->
+  <div id="header">
+    <h1>List n' Mail</h1>
+    <h2>Distribution lists made easy</h2>
+  </div>
+  <!-- END header -->
+  <!-- START Middle -->
+  <div id="main-content">
+    <!-- START section -> [Menu] -->
+    <div class="section highlight" id="navigation">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/lists/new">New List</a></li>
+      </ul>
+    </div>
+    <!-- END section -->
+    <%=yield%>
+  </div>
+  <!-- END Middle -->
+  <!-- START footer -->
+  <div id="footer">
+    <p class="footer-text">Copyright &copy; 2010 listnmail.com - All rights reserved. - <%= link_to "Unsubscribe", new_suppression_path %></p>
+  </div>
+  <!-- END footer -->
+</div>
+<!-- END wrapper -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+  var pageTracker = _gat._getTracker("UA-15404977-1");
+  pageTracker._setDomainName(".listnmail.com");
+  pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>
